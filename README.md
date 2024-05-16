@@ -22,7 +22,7 @@ in case of a failed round.
 2. Put the player inside the start room.
 3. Process inputed player movements until the player has reached the exit.
 4. Save total points upon exiting.
-5. After the game ends, output the shortest path through the dungeon.
+5. After the game ends, show the shortest path through the dungeon.
 ### Note:
 1. The dungeon is pre-generated.
 2. There is only one player and only one dungeon active at a time.
