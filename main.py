@@ -1,7 +1,5 @@
-from icecream import ic
 import random
 
-ic.disable()
 MONSTER_TYPES = {'0': None,
                  '1': 'slime',
                  '2': 'skeleton',
@@ -100,7 +98,6 @@ def handle_monster(monster_type):
             print(f"The {MONSTER_TYPES[monster_type]} is weakened.")
             input("Press Enter to continue.")
             power -= debuff
-            ic(power)
 
 
 
@@ -136,7 +133,6 @@ found_exit = False
 import_dungeon("example_dungeon.txt", rooms)
 dung_width = len(rooms[0])
 dung_height = len(rooms)
-ic(dung_height, dung_width)
 for j in range(dung_height):
     for i in range(dung_width):
         if rooms[j][i][0] == '2':
@@ -158,4 +154,3 @@ while not found_exit:
         direction = input("There is no exit there.\n")
     player.room = [x + y for x, y in zip(player.room, handle_movement(direction))]
     handle_room(player.room, rooms[player.room[0]][player.room[1]].type)
-    # print(player.room, points)
