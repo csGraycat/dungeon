@@ -11,9 +11,9 @@
 ### Room types:
 1. Treasure room. Adds a random amount of points to the player. The chests inside can be of three rarities: wooden, iron or golden. Each of the rarities can give different amount of points
 (2 - 4 for wooden chest, 5 - 7 for iron chest, 8 - 10 for golden chest).
-2. Monster room. If the player defeats a monster they get points equal to the strength level of the monster. The battle occurs by generating a random number and comparing it with monster's
-strength. If the number is greater than strength, the monster is defeated and the player recieves the reward. If less or equal to, the monster's strength decreases and the battle continues until
-the monster is defeated. There can be different types of monsters (add later). The type affects the starting strength range that a monster can have and value by which the strength decreases
+2. Monster room. If the player defeats a monster they get points equal to the power level of the monster. The battle occurs by generating a random number and comparing it with monster's
+power. If the number is greater than power, the monster is defeated and the player recieves the reward. If less or equal to, the monster's power decreases and the battle continues until
+the monster is defeated. There can be different types of monsters (slimes, skeletons or sombies). The type affects the starting power range that a monster can have and value by which the power decreases
 in case of a failed round.
 3. Empty room.
 4. The room that was already visited by the player. Counts as an empty room.
