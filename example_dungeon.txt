@@ -1,3 +1,3 @@
-4s;0;5s;
-1nes;32wse;1nw;
-1ne;1wne;22w;
+4s;0;5s;1s;
+1nes;32wse;1nw;1ns;
+1ne;1wne;22we;1n;

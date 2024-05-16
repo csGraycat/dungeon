@@ -1,7 +1,7 @@
-import re
 from icecream import ic
 import random
 
+ic.disable()
 MONSTER_TYPES = {'0': None,
                  '1': 'slime',
                  '2': 'skeleton',
@@ -134,7 +134,9 @@ monsters = []
 points = 0
 found_exit = False
 import_dungeon("example_dungeon.txt", rooms)
-dung_height = dung_width = len(rooms)
+dung_width = len(rooms[0])
+dung_height = len(rooms)
+ic(dung_height, dung_width)
 for j in range(dung_height):
     for i in range(dung_width):
         if rooms[j][i][0] == '2':
